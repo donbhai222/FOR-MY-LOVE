@@ -3,32 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>For My Renu ❤️</title>
+    <title>My Love Renu ❤️</title>
     <style>
         body {
             font-family: 'Poppins', sans-serif;
-            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            background: linear-gradient(135deg, #ff758c, #ff7eb3);
             height: 100vh;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             margin: 0;
+            text-align: center;
+            color: white;
+        }
+        .container {
+            padding: 20px;
+        }
+        h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.2);
         }
         .main-btn {
-            background-color: #ff4757;
-            color: white;
+            background-color: #ffffff;
+            color: #ff4757;
             border: none;
-            padding: 15px 30px;
+            padding: 15px 35px;
             font-size: 18px;
             font-weight: bold;
             border-radius: 30px;
             cursor: pointer;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
             transition: 0.3s;
         }
         .main-btn:hover {
-            background-color: #ff6b81;
-            transform: scale(1.05);
+            background-color: #fff0f3;
+            transform: scale(1.08);
         }
         /* Popup Box Design */
         .modal {
@@ -39,58 +50,65 @@
             top: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0,0,0,0.5);
+            background-color: rgba(0,0,0,0.6);
             justify-content: center;
             align-items: center;
         }
         .modal-content {
-            background: white;
-            padding: 30px;
-            border-radius: 20px;
-            width: 80%;
+            background: #fff;
+            color: #333;
+            padding: 35px 25px;
+            border-radius: 25px;
+            width: 85%;
             max-width: 400px;
             text-align: center;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-            animation: fadeIn 0.3s ease-in-out;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+            animation: popIn 0.4s ease-in-out;
         }
         .modal-content h2 {
             color: #ff4757;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+            font-size: 24px;
         }
         .modal-content p {
-            color: #333;
+            color: #444;
             font-size: 16px;
-            line-height: 1.6;
-            margin-bottom: 20px;
+            line-height: 1.7;
+            margin-bottom: 25px;
         }
         .close-btn {
-            background-color: #333;
+            background-color: #ff4757;
             color: white;
             border: none;
-            padding: 10px 20px;
+            padding: 10px 25px;
             font-size: 16px;
             border-radius: 20px;
             cursor: pointer;
+            font-weight: bold;
+            transition: 0.2s;
         }
         .close-btn:hover {
-            background-color: #555;
+            background-color: #e84118;
         }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(-20px); }
-            to { opacity: 1; transform: translateY(0); }
+        @keyframes popIn {
+            from { opacity: 0; transform: scale(0.8); }
+            to { opacity: 1; transform: scale(1); }
         }
     </style>
 </head>
 <body>
 
-    <!-- Button jo screen par dikhega -->
-    <button class="main-btn" onclick="openModal()">Deepanshu & Renu ❤️</button>
+    <div class="container">
+        <h1>My Love Renu ❤️</h1>
+        <!-- Button jo screen par dikhega -->
+        <button class="main-btn" onclick="openModal()">Click Here ✨</button>
+    </div>
 
     <!-- Yeh raha Message Box (Popup) -->
     <div id="myModal" class="modal">
         <div class="modal-content">
-            <h2>Renu & Deepanshu ✨</h2>
-            <p>Renu, tum meri zindagi ka sabse khoobsurat hissa ho. Deepanshu ki har khushi aur har dua me sirf tumhara hi naam hota hai. Hamesha aise hi sath rehna! ❤️</p>
+            <h2>For My Special Renu 💖</h2>
+            <p>Renu, tum meri zindagi ka sabse khoobsurat tohfa ho. Deepanshu ka dil har pal bas tumhe hi chahta hai, aur tumhare bina yeh zindagi adhoori si hai. Hamesha aise hi mere sath rehna, I Love You so much! ❤️</p>
             <button class="close-btn" onclick="closeModal()">Band Karo</button>
         </div>
     </div>
